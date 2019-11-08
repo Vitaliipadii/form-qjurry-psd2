@@ -57,7 +57,9 @@ h1, h2 {
     width: 400px;
     height: 498px;
     background-image: url(../images/bg.png);
+    background-size: cover;
     margin:  56px auto;
+    position: relative;
 }
 .form {
     width: 262px;
