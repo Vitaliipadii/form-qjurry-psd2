@@ -56,7 +56,7 @@ h1, h2 {
 
 .form {
     width: 262px;
-    margin: 100px auto;
+    margin: 60px auto;
     background-image: url(../images/bg.png);
     background-size: cover;
     padding: 52px 72px;
@@ -75,6 +75,7 @@ h1, h2 {
 
 .link--active {
     padding: 0 20px 3px 0;
+    margin: 0 16px 0 0;
 }
 
 .link--active:hover {
