@@ -53,53 +53,38 @@ h1, h2 {
     line-height: 0;
     height: 0;
 }
-.form__bg {
-    width: 400px;
-    height: 498px;
-    background-image: url(../images/bg.png);
-    background-size: cover;
-    margin:  56px auto;
-    position: relative;
-}
+
 .form {
     width: 262px;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 100px auto;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    padding: 52px 72px;
 }
-.form__head {
-    padding: 52px 0;
+.form__header {
+    padding: 10px 0;
     display: flex;
 }
-.form__sign,
-.form__join {
+.form__link {
     color: #E1C2F1;
     border-bottom: 2px solid transparent;
     font-size: 18px;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
 }
-.form--1:hover {
-    border-bottom: 2px solid #E66A64;
-    color: #F5EEE2;
-    transition-duration: 0.2s;
-    cursor: pointer;
-}
-.form--2:hover {
-    border-bottom: 2px solid #E66A64;
-    color: #F5EEE2;
-    transition-duration: 0.2s;
-    cursor: pointer;
-}
-.form--1 {
-    padding: 0 10px 3px 0;
-}
-.form--2 {
-    margin: 0 0 0 24px;
-    padding: 0 0 3px 0;
 
+.link--active {
+    padding: 0 20px 3px 0;
 }
+
+.link--active:hover {
+    border-bottom: 2px solid #E66A64;
+    color: #F5EEE2;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+
 .form__element-label {
     font-size: 16px;
     font-weight: bold;
@@ -118,6 +103,9 @@ h1, h2 {
 .form__element-ctrl:focus {
     border-color: #23AE92;
 }
+
+
+
 input[type="checkbox"] {
     display: none; 
 }
@@ -131,9 +119,13 @@ input[type="checkbox"]:checked + label:before {
     display: flex;
     align-items: center;
 }
+
+
 label {
     color: white;
     font-weight: 13px; 
+    display: flex;
+    align-items: flex-end;
 }
 label:before {
     content: '';
@@ -145,6 +137,8 @@ label:before {
     transition: 0.2s;
     
 }
+
+
 
 .form__button {
     margin: 40px 0 0 0;
@@ -165,18 +159,18 @@ label:before {
     background-color: rgb(5, 71, 58);
 }
 
-.form_footer {
+.form__footer {
     display: flex;
     justify-content: space-between;
 }
-.form--foot {
+.form__account {
     font-size: 13px;
     color: #B9B9CC;
     border-bottom: 1px solid #B9B9CC;
     padding: 0 0 2px 0;
     margin: 32px 0 0 0;
 }
-.form--foot:hover {
+.form__account:hover {
     color: white;
     cursor: pointer;
     transition-duration: 0.3s;

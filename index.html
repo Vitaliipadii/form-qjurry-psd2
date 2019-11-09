@@ -9,40 +9,38 @@
 </head>
 
 <body>
-    <div class="form__bg">
-        <form class="form" action="">
-            <div class="form__head">
-                <div class="form__sign form--1">Sign in</div>
-                <div class="form__join form--2">Join us</div>
-            </div>
 
-            <div class="form__body">
+    <form class="form" action="#">
+        <div class="form__header">
+            <div class="form__link link--active">Sign in</div>
+            <div class="form__link link--active">Join us</div>
+        </div>
+
+        <div class="form__body">
+            <div class="form__element">
+                <div class="form__element-label">Username</div>
+                <input class="form__element-ctrl" type="text" name="">
+
+                <div class="form__element-label">Password</div>
+                <input class="form__element-ctrl" type="password" name="">
+
+                <div class="form__element-check">
+                    <input class="form__element-checkbox" type="checkbox" name="" id="check">
+                    <label for="check">Keep me signed in</label>
+
+                </div>
+
                 <div class="form__element">
-                    <div class="form__element-label">Username</div>
-                    <input class="form__element-ctrl" type="text" name="">
-
-                    <div class="form__element-label">Password</div>
-                    <input class="form__element-ctrl" type="password" name="">
-
-                    <div class="form__element-check">
-                        <input class="form__element-checkbox" type="checkbox" name="" id="check">
-                        <label for="check">Keep me signed in</label>
-
-                    </div>
-
-                    <div class="form__element">
-                        <input class="form__button" type="submit" value="Sign in">
-                    </div>
+                    <input class="form__button" type="submit" value="Sign in">
                 </div>
             </div>
+        </div>
 
-            <div class="form_footer">
-                <div class="form__left form--foot">Forgot password</div>
-                <div class="form__right form--foot">Create an account</div>
-            </div>
-        </form>
-
-    </div>
+        <div class="form__footer">
+            <div class="form__account">Forgot password</div>
+            <div class="form__account">Create an account</div>
+        </div>
+    </form>
 
 </body>
 
